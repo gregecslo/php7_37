@@ -77,7 +77,7 @@ jobs:
           retention-days: 7
 
   release:
-    if: startsWith(github.ref, 'refs/tags/') && github.repository == 'Niek/php7'
+    if: startsWith(github.ref, 'refs/tags/') && github.repository == 'gregecslo/php7_37'
     needs: build
     runs-on: ubuntu-latest
     permissions:
